@@ -5,3 +5,5 @@ git commit -m "$now"
 echo "Enter Cred 
 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"
 git push
+jayanta-banik
+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
