@@ -1,9 +1,9 @@
 now=`date`
+token=`cat auths/git_push`
 git add .
 git reset -- homeserver/venv3/*
 git reset -- homeserver/auths/*
 git commit -m "$now"
 echo "Enter token"
-cat auths/git_push
-echo ""
+echo "$token"
 git push
