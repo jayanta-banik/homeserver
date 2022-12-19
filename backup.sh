@@ -1,9 +1,8 @@
 now=`date`
 git add .
 git reset -- homeserver/venv3/*
+git reset -- homeserver/auths/*
 git commit -m "$now"
-echo "Enter Cred 
-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"
+echo "Enter token"
+cat auths/git_push
 git push
-jayanta-banik
-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
