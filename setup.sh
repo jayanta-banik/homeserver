@@ -264,7 +264,7 @@ server {
 
 
 echo -e "\e[32mConfigurating nginx services...\e[97m"
-sudo ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled
+sudo ln -fs /etc/nginx/sites-available/app /etc/nginx/sites-enabled
 sudo rm /etc/nginx/sites-available/default
 sudo rm /etc/nginx/sites-enabled/default
 
