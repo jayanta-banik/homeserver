@@ -12,14 +12,14 @@ sudo systemctl enable app_http
 sudo systemctl restart app_http
 echo "done"
 
-echo "restarting http"
+echo "restarting root"
 sudo systemctl daemon-reload
 sudo systemctl start app_root
 sudo systemctl enable app_root
 sudo systemctl restart app_root
 echo "done"
 
-echo "restarting http"
+echo "restarting ai"
 sudo systemctl daemon-reload
 sudo systemctl start ai
 sudo systemctl enable ai

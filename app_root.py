@@ -1,7 +1,7 @@
 from flask import Flask
-app = Flask(__name__)
-@app.route('/')
+app_root = Flask(__name__)
+@app_root.route('/')
 def hello_world():
     return "Root server"
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app_root.run(debug=True, host='0.0.0.0')

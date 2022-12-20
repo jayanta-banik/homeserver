@@ -1,3 +1,3 @@
-from app_http import app
+from app_http import app_http
 if __name__ == '__main__':
-    app.run()
+    app_http.run()

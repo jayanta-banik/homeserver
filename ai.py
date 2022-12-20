@@ -1,7 +1,7 @@
 from flask import Flask
-app = Flask(__name__)
-@app.route('/')
+ai = Flask(__name__)
+@ai.route('/')
 def hello_world():
     return "Artificial Inteligence!"
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    ai.run(debug=True, host='0.0.0.0')

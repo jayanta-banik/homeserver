@@ -1,7 +1,7 @@
 from flask import Flask
-app = Flask(__name__)
-@app.route('/')
+app_http = Flask(__name__)
+@app_http.route('/')
 def hello_world():
     return "HTTP server"
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app_http.run(debug=True, host='0.0.0.0')

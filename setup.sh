@@ -202,7 +202,7 @@ server {
     index goback.html;
 
     location / {
-         try_files $uri $uri/ =404;
+         try_files \$uri \$uri/ =404;
     }
 
  
@@ -218,8 +218,8 @@ server {
 }
 
 server {
-    if ($host = pi.mlbots.in) {
-        return 301 https://$host$request_uri;
+    if (\$host = pi.mlbots.in) {
+        return 301 https://\$host\$request_uri;
     } # managed by Certbot
 
 
@@ -231,8 +231,8 @@ server {
 }
 
 server {
-    if ($host = resource.mlbots.in) {
-        return 301 https://$host$request_uri;
+    if (\$host = resource.mlbots.in) {
+        return 301 https://\$host\$request_uri;
     } 
 
 
