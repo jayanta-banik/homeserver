@@ -161,7 +161,7 @@ User=pi
 Group=www-data
 WorkingDirectory=/home/pi/homeserver/
 Environment=\"PATH=/home/pi/homeserver/venv3/bin\"
-ExecStart=/home/pi/homeserver/venv3/bin/gunicorn --workers 3 --bind unix:ai.sock -m 007 wsgi_ai:ai
+ExecStart=/home/pi/homeserver/venv3/bin/gunicorn --workers 1 --bind unix:ai.sock -m 007 wsgi_ai:ai
 [Install]
 WantedBy=multi-user.target
 " | sudo tee /etc/systemd/system/ai.service
