@@ -142,6 +142,8 @@ sudo printf "
 Description=Gunicorn instance to serve myproject
 After=network.target
 [Service]
+User=root
+Group=www-data
 WorkingDirectory=/home/pi/homeserver/
 Environment=\"PATH=/home/pi/homeserver/venv3/bin\"
 ExecStart=/home/pi/homeserver/venv3/bin/gunicorn --workers 1 --bind unix:app_root.sock -m 007 wsgi_root:app_root
